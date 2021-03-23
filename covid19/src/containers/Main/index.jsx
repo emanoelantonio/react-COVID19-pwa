@@ -22,13 +22,13 @@ function Main() {
         const country = target.value
         setCountry(country)
     }
-    
+
     return (
         <ContainerStyled>
             <div className="mb-2">
-                <Panel 
+                <Panel
                     data={data}
-                    update={updateAt}
+                    updateAt={updateAt}
                     onChange={handleChange}
                     country={country}
                     getCovidData={getCovidData}
